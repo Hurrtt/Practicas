@@ -26,7 +26,7 @@ def actualizar():
     nuevo_stock = int(input("Ingrese el nuevo stock: "))
     inventario[nombre] = nuevo_stock
 
-def eliminar_prodcutos():
+def eliminar_productos():
     global inventario
     nombre = input("Ingrese el nombre del producto que desea eliminar: ")
     del inventario[nombre]
@@ -44,7 +44,7 @@ def menu():
         elif opc == "3":
             actualizar()
         elif opc == "4":
-            eliminar_prodcutos()
+            eliminar_productos()
 menu()
 
 
