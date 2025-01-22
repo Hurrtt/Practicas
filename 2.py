@@ -20,7 +20,7 @@ def agregar_producto():
     stock = int(input("Ingrese la cantidad de stock: "))
     inventario [nombre] = stock
     
-def actualizar_stock():
+def actualizar():
     global inventario
     nombre = input("Ingrese el nombre del producto: ")
     nuevo_stock = int(input("Ingrese el nuevo stock: "))
@@ -42,7 +42,7 @@ def menu():
             consulta = input("Nombre del producto que desea consultar: ")
             print("El stock es de: ",inventario.get(consulta,stock))
         elif opc == "3":
-            actualizar_stock()
+            actualizar()
         elif opc == "4":
             eliminar_prodcutos()
 menu()
